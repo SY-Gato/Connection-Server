@@ -1,0 +1,18 @@
+{
+  "name": "WebSocket-Server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "SY-Gato",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "node-fetch": "^3.2.6",
+    "ws": "^8.16.0"
+  }
+}
