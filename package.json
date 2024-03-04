@@ -2,10 +2,10 @@
   "name": "WebSocket-Server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "functions/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
+    "start": "node functions/index.js",
     "build": "echo 'No Build Scripts Required.'"
   },
   "keywords": [],
