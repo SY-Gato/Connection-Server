@@ -9,11 +9,7 @@ wss.on('connection', function connection(ws) {
   });
 });*/
 var WebSocketServer = require('ws').Server
-  , http = require('http')
-  , express = require('express')
-  , app = express();
-
-app.use(express.static(__dirname + '/public'));
+  , http = require('http');
 
 var server = http.createServer(app);
 server.listen(8080);
