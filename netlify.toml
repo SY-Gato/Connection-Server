@@ -13,7 +13,7 @@
     Access-Control-Allow-Origin = "*"
 
 [functions]
-  directory = "functions/
+  directory = "functions/"
 
 [dev]
   command = "npm run start"  # Replace this with your development server command if necessary
