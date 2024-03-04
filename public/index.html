@@ -1,1 +1,22 @@
-
+<!DOCTYPE html><!-- (c) 2011 Einar Otto Stangvik, MIT License -->
+<html>
+  <head>
+    <script>
+      function updateStats(memuse) {
+        document.getElementById('rss').innerHTML = memuse.rss;
+        document.getElementById('heapTotal').innerHTML = memuse.heapTotal;
+        document.getElementById('heapUsed').innerHTML = memuse.heapUsed;
+      }
+      var host = window.document.location.host.replace(/:.*/, '');
+      var ws = new WebSocket('wss://' + host + '/');
+      ws.onmessage = function (event) {
+        updateStats(JSON.parse(event.data));
+      };
+    </script>
+  </head>
+  <body>
+    RSS: <div id='rss'></div><br>
+    Heap total: <div id='heapTotal'></div><br>
+    Heap used: <div id='heapUsed'></div><br>
+  </body>
+</html>
