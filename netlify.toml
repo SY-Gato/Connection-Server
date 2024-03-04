@@ -3,7 +3,7 @@
   functions = "functions/"  # Path to your serverless functions directory
 
 [[redirects]]
-  from = "/public/"
+  from = "/*"
   to = "/public/index.html"
   status = 200
 
@@ -11,6 +11,9 @@
   for = "/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
+
+[functions]
+  directory = "functions/
 
 [dev]
   command = "npm run start"  # Replace this with your development server command if necessary
