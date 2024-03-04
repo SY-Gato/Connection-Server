@@ -11,7 +11,7 @@ wss.on('connection', function connection(ws) {
 var WebSocketServer = require('ws').Server
   , http = require('http');
 
-var server = http.createServer(app);
+var server = http.createServer();
 server.listen(8080);
 
 var wss = new WebSocketServer({server: server});
