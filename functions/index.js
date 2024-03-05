@@ -8,6 +8,7 @@ wss.on('connection', function connection(ws) {
     ws.send(message);
   });
 });*/
+exports.handler = function(event, context) {
 var WebSocketServer = require('ws').Server
   , http = require('http');
 
@@ -26,3 +27,4 @@ wss.on('connection', function(ws) {
     clearInterval(id);
   });
 });
+};
