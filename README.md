@@ -1,2 +1,3 @@
 # Connection-Server
-A
+
+A little ws server I tried to make. (hosted on netlify).
