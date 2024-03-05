@@ -8,7 +8,7 @@
         document.getElementById('heapUsed').innerHTML = memuse.heapUsed;
       }
       var host = "cool-paletas-2c033a.netlify.app/.netlify/functions/index.js";
-      var ws = new WebSocket('ws://' + host + '/');
+      var ws = new WebSocket('wss://' + host + '/');
       ws.onmessage = function (event) {
         updateStats(JSON.parse(event.data));
       };
