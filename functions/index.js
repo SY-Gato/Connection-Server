@@ -36,6 +36,8 @@ const wss = new ws.Server({noServer: true});
 
 const clients = new Set();
 
+console.log("Is Server Terminated? "+String(wss.terminated));
+console.log("Server path: "+String(wss.path));
 http.createServer((req, res) => {
   // here we only handle websocket connections
   // in real project we'd have some other code here to handle non-websocket requests
