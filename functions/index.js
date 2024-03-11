@@ -31,6 +31,7 @@ wss.on('connection', function(ws) {
 
 exports.handler = function(event2, context) {
 const ws = require('ws');
+const http = require('http');
 const wss = new ws.Server({noServer: true});
 
 const clients = new Set();
