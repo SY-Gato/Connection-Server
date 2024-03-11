@@ -1,3 +1,4 @@
+exports.handler = function(event2, context) {
 const ws = new require('ws');
 const wss = new ws.Server({noServer: true});
 
@@ -24,3 +25,4 @@ function onSocketConnect(ws) {
     clients.delete(ws);
   });
 }
+};
