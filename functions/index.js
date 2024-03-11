@@ -30,7 +30,7 @@ wss.on('connection', function(ws) {
 };*/
 
 exports.handler = function(event2, context) {
-const ws = new require('ws');
+const ws = require('ws');
 const wss = new ws.Server({noServer: true});
 
 const clients = new Set();
